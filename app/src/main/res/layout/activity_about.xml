@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/back2"
+        android:textSize="18sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sophia"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/sophia"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/designer1"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="276dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/Designer1"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/designer2"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/Designer2"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/designer3"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/Designer3"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/designer4"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="372dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/Designer4"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/designer5"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="404dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/Designer5"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hsainnos"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/hsainnos"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="246dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/developer"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/institut"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/institut2"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/design"
+        android:layout_width="177dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/LottieFilesDesign"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/androidLogo"
+        android:layout_width="168dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/androidlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

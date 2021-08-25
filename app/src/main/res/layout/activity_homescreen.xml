@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="342dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@id/app_title"
+        app:layout_constraintTop_toTopOf="@id/app_title"
+        app:srcCompat="@drawable/minderheiten_neu" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="309dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/trump" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:fontFamily="@font/finger_paint"
+        android:rotation="0"
+        android:rotationY="0"
+        android:text="@string/minderheiten"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/app_title_sec"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:fontFamily="@font/finger_paint"
+        android:rotation="0"
+        android:rotationY="0"
+        android:text="@string/nerd_subtitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/trump_intro"
+        android:textSize="14sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/about"
+        android:textSize="12sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

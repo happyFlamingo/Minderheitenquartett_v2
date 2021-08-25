@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible">
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="149dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:fontFamily="@font/finger_paint"
+        android:onClick="playRoundButtonOnClick"
+        android:text="@string/play"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:contentDescription="@string/gegner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="133dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/spieler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avatar2" />
+
+    <TextView
+        android:id="@+id/username_gegner"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Spielername" />
+
+    <TextView
+        android:id="@+id/spielerstapel_gegner"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Karten im Spielerstapel:" />
+
+    <TextView
+        android:id="@+id/gewonneneRuden_gegner"
+        android:layout_width="171dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="gewonnene Runden:" />
+
+    <TextView
+        android:id="@+id/anz_Runden"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="394dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        tools:text="Player X" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="128dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Spielername" />
+
+    <TextView
+        android:id="@+id/spielerstapel"
+        android:layout_width="197dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Karten im Spielerstapel:" />
+
+    <TextView
+        android:id="@+id/gewonneneRuden"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="gewonnene Runden:" />
+
+    <TextView
+        android:id="@+id/spielzug"
+        android:layout_width="189dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/naechster_spieler"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

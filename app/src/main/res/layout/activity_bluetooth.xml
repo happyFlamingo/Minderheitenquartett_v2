@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Bluetooth">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="584dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/console" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="73dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginBottom="556dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/console" />
+
+    <Button
+        android:id="@+id/button_bluetooth"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/bluetooth3"
+        android:textSize="12sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_discoverable"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:onClick="auffindbarkeit"
+        android:text="@string/discoverability"
+        android:textSize="12sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:onClick="btnDiscover"
+        android:text="@string/findunpaireddevices"
+        android:textSize="12sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartConnection"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/connect"
+        android:textSize="12sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/btnFindUnpairedDevices"
+        android:layout_marginTop="388dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="92dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/send"
+        android:textSize="14sp"
+        app:backgroundTint="@color/design_default_color_on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="233dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/lvNewDevices"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="657dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginBottom="19dp"
+        android:autofillHints=""
+        android:fontFamily="@font/finger_paint"
+        android:hint="@string/deine_nachricht"
+        android:inputType="textShortMessage|textLongMessage|textAutoCorrect|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|textEmailAddress|textCapWords|textEmailSubject|textCapCharacters|time"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/incomingMessage"
+        android:layout_width="330dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="568dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="94dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/incomingmsg"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible"
+    tools:context="com.example.minderheitenquartett.Gewinner">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/trump_final_speach"
+        android:layout_width="251dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/trump_speach" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/award"
+        android:layout_width="122dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginBottom="556dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/thewinneris" />
+
+    <TextView
+        android:id="@+id/game_result_text"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/finger_paint"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sophia gewinnt" />
+
+    <Button
+        android:id="@+id/neueRunde"
+        android:layout_width="162dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:onClick="playAgainOnClick"
+        android:text="@string/neue_Runde"
+        android:textColorLink="@color/teal_700"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/veryGreatGame"
+        android:layout_width="327dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/finger_paint"
+        android:text="@string/game"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
